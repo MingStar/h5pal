@@ -38,9 +38,9 @@ welcome.splashScreen = function*(surface) {
   titleBitmap[2] = titleBitmap[3] = 0; // HACK HACK
 
   // Generate the positions of the cranes
-  var cranepos = utils.initArray(Array, 9);
+  var cranepos = utils.initArray(Array, 20);
   for (i = 0; i < cranepos.length; i++) {
-    cranepos[i][0] = randomLong(300, 600);
+    cranepos[i][0] = randomLong(100, 600);
     cranepos[i][1] = randomLong(0, 80);
     cranepos[i][2] = randomLong(0, 8);
   }
