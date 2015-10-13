@@ -18,7 +18,7 @@ global.DEBUG = {
 };
 
 var log = global.log = {
-  level: 2,
+  level: 1,
   write: function(level) {
     if (level < log.level) return;
     var args = slice.call(arguments, 1);
