@@ -995,6 +995,7 @@ battle.start = function*(enemyTeam, isBoss) {
   Global.battle.summonSprite = null;
   Global.battle.backgroundColorShift = 0;
 
+  var previousMusic = Global.numMusic;
   Global.inBattle = true;
   Global.battle.battleResult = BattleResult.PreBattle;
 
@@ -1059,7 +1060,7 @@ battle.start = function*(enemyTeam, isBoss) {
 
   Global.inBattle = false;
 
-  music.play(Global.numMusic, true, 1);
+  music.play(previousMusic, true, 1);
 
   // Restore the screen waving effects
   Global.waveProgression = prevWaveProgression;

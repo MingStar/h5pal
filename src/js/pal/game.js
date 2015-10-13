@@ -6,6 +6,7 @@ import input from './input';
 import play from './play';
 import script from './script';
 import res from './res';
+import music from './music';
 
 log.trace('game module load');
 
@@ -156,6 +157,7 @@ game._loadGame = function(s) {
   //PAL_CompressInventory();
   script.compressInventory();
 
+  music.play(Global.numMusic, true, 1);
   // Success
   return true;
 };
